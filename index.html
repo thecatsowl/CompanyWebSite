@@ -63,7 +63,7 @@
     <br>
     <br>
     <div><pre><code>
-    // This program greets Owl.
+    // This program greets Owl. 
 
     #include &lt;iostream&gt;
     using namespace std;
@@ -74,6 +74,54 @@
     return 0;
     }
     </div></pre></code>
+      <br>
+      <br>
+      <br>
+      <div><pre><code> 
+// This is a program to allow Owl to list however many terms
+// in the Fibonacci series she wishes displayed on the screen
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+  int fib_zero = 0;
+  int fib_one = 1;
+  int fib_two;
+  int n;
+  cout &lt;&lt; "\n";
+  cout &lt;&lt; "Greetings, Owl!\n";
+  cout &lt;&lt; "Enter the number of Fibonacci numbers you'd like displayed.\n";
+   cin &gt;&gt; n;
+  cout &lt;&lt; "\n"
+       &lt;&lt; "Your " 
+       &lt;&lt; n 
+       &lt;&lt; " " 
+       &lt;&lt; "Fibonacci numbers are displayed below, in order from left to right:\n"
+       &lt;&lt; fib_zero  // Outputting 0 
+       &lt;&lt; " "      // Spaces out each term 
+       &lt;&lt; fib_one // Outputting 1
+       &lt;&lt; " "; 
+  for (int i = 2; i &lt; n; i++) // Loop starts from 2 because 0 and 1 have already been outputted
+                              // ++i is different from i++                             
+    {                       
+      fib_two = fib_zero + fib_one;
+      fib_zero = fib_one;
+      fib_one = fib_two; 
+      cout &lt;&lt; fib_two 
+           &lt;&lt; " ";
+    }
+  cout &lt;&lt; "\n"
+       &lt;&lt; "Have an awesome day, Owl!\n" 
+       &lt;&lt; endl;
+  return 0;
+}
+
+      </div></pre></code>
+      <br>
+      <br>
+      <br>
     <h1>Les Oiseaux dans La Charmille</h1>
 
     <p>Les <i>oiseaux</i> dans la <b><i>charmille</i></b></p>
