@@ -53,6 +53,12 @@
       vertical-align: center;
       top: center;
       }    
+	  
+	  .dark-mode
+	  {
+	     background-color: #000000;
+		 color: #ffffff;
+	  }
     </style>
     <link rel="icon" href="./favicon_1.ico" type="image/x-icon"></link>
   </head>
@@ -62,6 +68,17 @@
     <br>
     <h1 align="center">Calculus</h1>
     <br>
+	<nav>
+	   <button onclick="myFunction()">Toggle Dark Mode</button>
+
+	   <script>
+	      function myFunction()
+			{
+			   var element=document.body;
+			   element.classList.toggle("dark-mode");
+			}
+	   </script>
+	</nav>
     <h2>Professor Buchwald's Calculus One Course</h2>
     <h3>Week 0: 08/24/2020 - 08/30/2020</h3>
     <div align="center" style="border: none; background-color: #ffffff;">
